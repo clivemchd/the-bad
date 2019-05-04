@@ -1271,6 +1271,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   float: left;
   margin-top: 20px; }
   #branding .logo, #branding .logo-text {
+    width:572px;
     display: inline-block;
     vertical-align: middle; }
   #branding .logo {
@@ -1278,15 +1279,14 @@ form input[type="submit"], form button, form input[type="reset"] {
   #branding .site-title {
     font-size: 18px;
     font-size: 1.2857142857em;
-    text-transform: uppercase;
     letter-spacing: 2px;
+      color: white;
     margin-bottom: 0; }
     #branding .site-title a {
       color: white; }
   #branding .site-description {
     font-size: 11px;
-    font-size: 0.7857142857em;
-    color: #585858; }
+    color: #d3d3d3; }
 
 .main-navigation {
   float: right; }
@@ -1790,3 +1790,14 @@ form input[type="submit"], form button, form input[type="reset"] {
               transform: rotate(-45deg);
       bottom: -5px;
       right: -5px; }
+
+@media (max-width: 1200px) {
+    #branding .logo, #branding .logo-text{
+        width: 466px;
+    }
+}
+
+.logo {
+    height: 50px !important;
+    width: 50px !important;
+}
