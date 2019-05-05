@@ -13,6 +13,7 @@
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
 		
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
@@ -27,13 +28,7 @@
 		<div id="site-content">
 			<div class="site-header">
 				<div class="container">
-					<a href="index.html" id="branding">
-						<img src="images/logo.png" alt="" class="logo">
-						<div class="logo-text">
-							<h1 class="site-title">Company Name</h1>
-							<small class="site-description">Tagline goes here</small>
-						</div>
-					</a> <!-- #branding -->
+                    <div id="header"></div>
 
 					<!-- Default snippet for navigation -->
 					<div class="main-navigation">
@@ -83,40 +78,16 @@
 
 			</main> <!-- .main-content -->
 
-			<footer class="site-footer">
-				<div class="container">
-					<div class="pull-left">
-
-						<address>
-							<strong>Company Name</strong>
-							<p>532 Avenue Street, Omaha</p>
-						</address>
-
-						<a href="#" class="phone">+ 1 800 931 033</a>
-					</div> <!-- .pull-left -->
-					<div class="pull-right">
-
-						<div class="social-links">
-
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-pinterest"></i></a>
-
-						</div>
-
-					</div> <!-- .pull-right -->
-
-					<div class="colophon">Copyright 2014 Company name. Designed by <a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com" target="_blank">VandelayDesign.com</a>. All rights reserved.</div>
-
-				</div> <!-- .container -->
-			</footer> <!-- .site-footer -->
+            <div id="footer"></div>
 		</div>
 
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
-		
+        <script>
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        </script>
 	</body>
 
 </html>
